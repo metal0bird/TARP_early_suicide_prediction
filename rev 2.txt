@@ -1,0 +1,10 @@
+rev 2 
+
+13,15,16th feb 
+
+20 minutes ppt
+try to complete implementation (at least 70%)
+for research paper -
+abstract, intro, literature survey, block diag or architecture 
+ppt -
+just extend, 
