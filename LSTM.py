@@ -12,7 +12,7 @@ from keras.layers import Dense, Embedding, LSTM, SpatialDropout1D
 from sklearn.model_selection import train_test_split 
 from tensorflow.keras.utils import to_categorical
 from sklearn import preprocessing
-
+import pickle
 df=pd.read_csv("/Users/aman/coding stuff/sem 6/tarp/dataset/Suicide_preprocessed1.csv")
 
 def cleaning(df):
@@ -45,6 +45,17 @@ y_train = to_categorical(y_train, 3)
 y_test = to_categorical(y_test, 3)
 #Model Training
 print(X_train,X_test,y_train,y_test)
-model.fit(X_train, y_train, epochs =30, batch_size=1, verbose =1)
+model.fit(X_train, y_train, epochs =30, batch_size=32, verbose =1)
 #Model Testing
 model.evaluate(X_test,y_test)
+
+
+  
+# Save the trained model as a pickle string.
+saved_model = pickle.dumps(model)
+
+# Load the pickled model
+#lstm_from_pickle = pickle.loads(saved_model)
+  
+# Use the loaded pickled model to make predictions
+#lstm_from_pickle.predict(X_test)
