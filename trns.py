@@ -30,19 +30,15 @@ model = AutoModelForSequenceClassification.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 sentiment_pipeline = pipeline("sentiment-analysis",model=model, tokenizer=tokenizer)
 l1=[]
-j=0
-for i in df_text[0:1000]:
-    l1.append(sentiment_pipeline(list(i)))
-    j=j+1
-    if j%5==0:
-        print(j)
-    
-#print(l1)
-#print(l1[0]["label"])
+for z in range(0,1000,10):
+    l1.append(sentiment_pipeline(df_text[z:z+10]))
+
+
+print(l1[0]["label"])
 
 l3=[]
-for i in l1:
-    if i["label"]=="NEGATIVE":
+for i in range(0,1000):
+    if l1[0]["label"]=="NEGATIVE":
         l3.append("suicide")
     else:
         l3.append("non-suicide")
