@@ -1,4 +1,10 @@
 # TARP_early_suicide_prediction
+
+Authors:
+Aman Gupta
+Metul Prabhu
+
+
 In our project, we aimed to tackle the issue of early suicide prediction using data science and machine learning techniques. The project made use of the SuicideWatch dataset from Kaggle, which provided a large volume of relevant data for this problem. To achieve the highest possible accuracy in our predictions, we adopted a hybrid approach that combined deep learning models with a lexicon-based technique.
 
 The deep learning models were trained on the dataset, and the lexicon-based approach was used to supplement the predictions made by the models. The combination of these two techniques allowed us to achieve a higher accuracy compared to if we had used only traditional machine learning algorithms.
