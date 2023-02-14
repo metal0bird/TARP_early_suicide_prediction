@@ -1,7 +1,8 @@
 # TARP_early_suicide_prediction
 
 Authors:
-Aman Gupta
+Aman Gupta,
+
 Metul Prabhu
 
 
