@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css'
 import cx from 'classnames';
-import useSWR from 'swr';
+// import useSWR from 'swr';
 import { saveAs } from 'file-saver';
 import path from 'path';
 
@@ -9,7 +9,7 @@ import path from 'path';
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 function dashboard() {
-    const { data, error } = useSWR('/api/staticdata', fetcher);
+    // const { data, error } = useSWR('/api/staticdata', fetcher);
     return (
         <div className={styles.container}>
             <Head>
@@ -26,8 +26,7 @@ function dashboard() {
                         var blob = new Blob([e.target[0].value], { type: "text/plain;charset=utf-8" });
                         saveAs(blob, "dynamic.txt");
                         // window.open(path.join(process.cwd(), 'public') + "/data.json", "_blank");
-                        if (data)
-                            window.open("http://localhost:3000/data.json", "_blank");
+                        window.open("http://localhost:3000/data.json", "_blank");
 
                     }}
                 >
