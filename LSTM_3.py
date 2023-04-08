@@ -50,6 +50,7 @@ model.fit(X_train, y_train, epochs =30, batch_size=32, verbose =1)
 model.evaluate(X_test,y_test)
 
 
+
   
 # Save the trained model as a pickle string.
 saved_model_3 = pickle.dumps(model)

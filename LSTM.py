@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras.utils import to_categorical
 from sklearn import preprocessing
 import pickle
-df=pd.read_csv("/Users/aman/coding stuff/sem 6/tarp/dataset/Suicide_preprocessed1.csv")
+df=pd.read_csv("/Users/aman/coding stuff/sem 6/tarp/dataset/Suicide_preprocessed4.csv")
 
 def cleaning(df):
     df['text'] = df['text'].apply(lambda x: ' '.join(x.lower() for x in x.split()))
@@ -37,22 +37,22 @@ model.add(LSTM(704, dropout=0.2, recurrent_dropout=0.2))
 model.add(Dense(352, activation='LeakyReLU'))
 model.add(Dense(3, activation='softmax'))
 model.compile(loss = 'categorical_crossentropy', optimizer='adam', metrics = ['accuracy'])
-print(model.summary())
+#print(model.summary())
 df["class"]=preprocessing.LabelEncoder().fit_transform(df["class"])
 X_train,X_test,y_train,y_test=train_test_split(X,df["class"],test_size=0.2)
 
 y_train = to_categorical(y_train, 3)
 y_test = to_categorical(y_test, 3)
 #Model Training
-print(X_train,X_test,y_train,y_test)
-model.fit(X_train, y_train, epochs =30, batch_size=32, verbose =1)
+#print(X_train,X_test,y_train,y_test)
+model.fit(X_train, y_train, epochs =5, batch_size=32, verbose =1)
 #Model Testing
-model.evaluate(X_test,y_test)
-
+#model.evaluate(X_test,y_test)
+print(model.summary())
 
   
 # Save the trained model as a pickle string.
-saved_model = pickle.dumps(model)
+#saved_model = pickle.dumps(model)
 
 # Load the pickled model
 #lstm_from_pickle = pickle.loads(saved_model)
