@@ -26,7 +26,7 @@ function dashboard() {
                         var blob = new Blob([e.target[0].value], { type: "text/plain;charset=utf-8" });
                         saveAs(blob, "dynamic.txt");
                         // window.open(path.join(process.cwd(), 'public') + "/data.json", "_blank");
-                        window.open("http://localhost:3000/data.json", "_blank");
+                        window.open("https://raw.githubusercontent.com/metal0bird/TARP_early_suicide_prediction/main/login/public/data.json", "_blank");
 
                     }}
                 >
