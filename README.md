@@ -6,6 +6,8 @@ Authors:
 
 - Metul Prabhu
 
+- Subhranshu Pati (interface)
+
 
 In our project, we aimed to tackle the issue of early suicide prediction using data science and machine learning techniques. The project made use of the SuicideWatch dataset from Kaggle, which provided a large volume of relevant data for this problem. To achieve the highest possible accuracy in our predictions, we adopted a hybrid approach that combined deep learning models with a lexicon-based technique.
 
