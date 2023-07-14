@@ -15,4 +15,10 @@ The deep learning models were trained on the dataset, and the lexicon-based appr
 
 Additionally, we designed a user interface that could be used to provide support to individuals who are potentially at risk of suicide. This interface allowed for easy and effective communication between the users and a support network, and it was integrated into the overall solution.
 
+- screen shots of interface
+  ![images](https://github.com/metal0bird/TARP_early_suicide_prediction/blob/main/assets/Screenshot%202023-07-14%20at%2010.07.49%20AM.png)
+
+  ![image](https://github.com/metal0bird/TARP_early_suicide_prediction/blob/main/assets/Screenshot%202023-07-14%20at%2010.07.56%20AM.png)
+
+  ![image](https://github.com/metal0bird/TARP_early_suicide_prediction/blob/main/assets/Screenshot%202023-07-14%20at%2010.08.08%20AM.png)
 In conclusion, our project demonstrated the potential of data science and machine learning techniques to address important social issues like early suicide prediction. The combination of deep learning models and lexicon-based approach allowed us to achieve improved accuracy and the user interface provided a means to support those in need.
