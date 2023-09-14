@@ -12,11 +12,11 @@ Additionally, we designed a user interface that could be used to provide support
 
 ### Interface
 
-  ![images](https://github.com/metal0bird/TARP_early_suicide_prediction/blob/main/assets/Screenshot%202023-07-14%20at%2010.07.49%20AM.png)
+<img width="829" alt="Screenshot 2023-09-15 at 12 19 54 AM" src="https://github.com/metal0bird/TARP_early_suicide_prediction/assets/71923741/a67eacad-b910-42f5-81dd-3982e2fab9c3">
 
-  ![image](https://github.com/metal0bird/TARP_early_suicide_prediction/blob/main/assets/Screenshot%202023-07-14%20at%2010.07.56%20AM.png)
+<img width="831" alt="Screenshot 2023-09-15 at 12 20 02 AM" src="https://github.com/metal0bird/TARP_early_suicide_prediction/assets/71923741/08130a53-0af1-4e1e-a7a2-a257191ad877">
 
-  ![image](https://github.com/metal0bird/TARP_early_suicide_prediction/blob/main/assets/Screenshot%202023-07-14%20at%2010.08.08%20AM.png)
+<img width="831" alt="Screenshot 2023-09-15 at 12 20 12 AM" src="https://github.com/metal0bird/TARP_early_suicide_prediction/assets/71923741/f86abfd7-50af-4b20-8d08-7172a9b786a7">
 
 ### Parametrics of models
 
